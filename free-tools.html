@@ -1,0 +1,53 @@
+---
+layout: default
+active: "free-tools.html"
+base: ""
+head: |
+  <title>Free Website Cost, ROAS, SERP, UTM &amp; AI Cost Calculators | Core.Digital</title><meta name="description" content="Free calculators: website cost estimator, ad ROI/ROAS calculator, Google SERP preview, UTM builder and AI API cost estimator.">
+  <link rel="canonical" href="https://webworksa1.github.io/core-digital/free-tools.html"><meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Core.Digital"><meta property="og:title" content="Free Website Cost, ROAS, SERP, UTM &amp; AI Cost Calculators | Core.Digital">
+  <meta property="og:description" content="Free calculators: website cost estimator, ad ROI/ROAS calculator, Google SERP preview, UTM builder and AI API cost estimator."><meta property="og:url" content="https://webworksa1.github.io/core-digital/free-tools.html"><meta property="og:image" content="https://webworksa1.github.io/core-digital/assets/img/og.png">
+ld: |
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Core.Digital", "url": "https://webworksa1.github.io/core-digital/", "logo": "https://webworksa1.github.io/core-digital/assets/img/logo.svg"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Core.Digital Free Tools", "applicationCategory": "BusinessApplication", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+js: "<script src=\"assets/js/calculators.js\" defer></script>"
+---
+
+
+<section class="hero" style="padding-bottom:24px"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a> / Free tools</div>
+<span class="eyebrow">Free tools</span><h1>Free digital business calculators</h1><p class="lead">Private, instant, no sign-up. Everything runs in your browser.</p>
+<div class="chips"><a class="chip" href="#cost">Website cost</a><a class="chip" href="#roas">Ad ROI / ROAS</a><a class="chip" href="#serp">SERP preview</a><a class="chip" href="#utm">UTM builder</a><a class="chip" href="#ai">AI API cost</a></div></div></section>
+<div class="container grid" style="gap:28px">
+<div class="card" id="cost"><h2>Website cost estimator</h2><p>Indicative 2026 ranges based on typical freelancer, studio and agency pricing. Use it to set a realistic budget before you brief anyone.</p>
+<div class="split" style="margin-top:18px;align-items:start"><form class="form" id="calc-cost" onsubmit="return false">
+<div class="form-row"><label class="fl">Site type<select id="cc-type"><option value="landing">Landing page</option><option value="business" selected>Business website</option><option value="content">Content / media site</option><option value="store">E-commerce store</option><option value="app">Web app / SaaS</option></select></label>
+<label class="fl">Who builds it<select id="cc-who"><option value="freelancer">Freelancer</option><option value="studio" selected>Small studio</option><option value="agency">Full-service agency</option></select></label></div>
+<label class="fl">Number of pages<input id="cc-pages" type="number" min="1" max="500" value="8"></label>
+<fieldset style="border:0;padding:0;display:grid;gap:8px"><legend class="fl" style="margin-bottom:8px">Features</legend><label class="check"><input type="checkbox" data-add="500-2000"> CMS / blog</label><label class="check"><input type="checkbox" data-add="1500-5000"> Online payments / store</label><label class="check"><input type="checkbox" data-add="1000-4000"> Multilingual</label><label class="check"><input type="checkbox" data-add="1500-6000"> Fully custom design</label><label class="check"><input type="checkbox" data-add="500-2000"> SEO setup & analytics</label><label class="check"><input type="checkbox" data-add="1000-6000"> Integrations / API</label><label class="check"><input type="checkbox" data-add="1000-5000"> AI chatbot or assistant</label><label class="check"><input type="checkbox" data-add="800-3000"> Copywriting</label></fieldset></form>
+<div><div class="calc-out" id="cc-out"></div><a class="btn btn-primary btn-block" id="cc-cta" href="get-matched.html?service=website" style="margin-top:14px">Get quotes in this range — free</a></div></div></div>
+<div class="ad-slot container" data-ad="inArticle" aria-label="Advertisement"></div>
+<div class="card" id="roas"><h2>Ad ROI &amp; ROAS calculator</h2><p>Model a Google, Meta or TikTok campaign before you spend.</p>
+<div class="split" style="margin-top:18px;align-items:start"><form class="form" id="calc-roas" onsubmit="return false">
+<div class="form-row"><label class="fl">Monthly ad spend ($)<input id="r-spend" type="number" value="3000" min="0"></label><label class="fl">Avg. cost per click ($)<input id="r-cpc" type="number" value="1.8" step="0.01" min="0"></label></div>
+<div class="form-row"><label class="fl">Conversion rate (%)<input id="r-cr" type="number" value="2.5" step="0.1" min="0"></label><label class="fl">Avg. order / lead value ($)<input id="r-aov" type="number" value="120" min="0"></label></div>
+<label class="fl">Gross margin (%)<input id="r-margin" type="number" value="45" min="1" max="100"></label></form>
+<div><div class="calc-out" id="r-out"></div><a class="btn btn-primary btn-block" href="get-matched.html?service=ads" style="margin-top:14px">Get a PPC specialist to beat these numbers</a></div></div></div>
+<div class="card" id="serp"><h2>Google SERP snippet preview</h2><p>Preview how your title and meta description may appear in search results.</p>
+<div class="split" style="margin-top:18px;align-items:start"><form class="form" id="calc-serp" onsubmit="return false">
+<label class="fl">Page URL<input id="s-url" type="url" value="https://example.com/ai-tools"></label>
+<label class="fl">Title tag<input id="s-title" value="Best AI Tools for Small Business (2026 Guide)"><span id="s-tm" class="meter"></span></label>
+<label class="fl">Meta description<textarea id="s-desc" style="min-height:90px">Compare the most useful AI tools for writing, design, video and automation — with pricing, pros and cons, and who each one is best for.</textarea><span id="s-dm" class="meter"></span></label></form>
+<div><div class="serp" id="s-prev"></div><p class="form-note" style="margin-top:10px">Google may rewrite snippets. Length guidance is approximate (display is pixel-based).</p></div></div></div>
+<div class="card" id="utm"><h2>UTM campaign link builder</h2>
+<form class="form" id="calc-utm" onsubmit="return false" style="margin-top:14px"><label class="fl">Destination URL<input id="u-url" type="url" value="https://example.com/landing"></label>
+<div class="form-row"><label class="fl">Source<input id="u-source" value="newsletter"></label><label class="fl">Medium<input id="u-medium" value="email"></label></div>
+<div class="form-row"><label class="fl">Campaign<input id="u-campaign" value="spring launch"></label><label class="fl">Term (optional)<input id="u-term"></label></div>
+<label class="fl">Content (optional)<input id="u-content" placeholder="cta-button"></label>
+<label class="fl">Your tagged link<input id="u-out" readonly></label><button type="button" class="btn btn-ghost" id="u-copy">Copy link</button></form></div>
+<div class="card" id="ai"><h2>AI API cost estimator</h2><p>Enter your provider's current per-million-token prices (check their pricing page — defaults are examples only).</p>
+<div class="split" style="margin-top:18px;align-items:start"><form class="form" id="calc-ai" onsubmit="return false">
+<div class="form-row"><label class="fl">Input tokens / request<input id="a-in" type="number" value="1500" min="0"></label><label class="fl">Output tokens / request<input id="a-out" type="number" value="500" min="0"></label></div>
+<label class="fl">Requests per day<input id="a-req" type="number" value="1000" min="0"></label>
+<div class="form-row"><label class="fl">Price per 1M input tokens ($)<input id="a-pin" type="number" value="3" step="0.01" min="0"></label><label class="fl">Price per 1M output tokens ($)<input id="a-pout" type="number" value="15" step="0.01" min="0"></label></div></form>
+<div><div class="calc-out" id="a-res"></div><a class="btn btn-primary btn-block" href="get-matched.html?service=ai" style="margin-top:14px">Get an AI automation expert</a></div></div></div>
+<div class="card featured"><h3>Want a tool built for your audience?</h3><p>Sponsor a branded calculator on Core.Digital — it's one of our highest-engagement placements.</p><p style="margin-top:12px"><a class="btn btn-primary" href="advertise.html">Sponsor a tool</a></p></div>
+</div>
