@@ -1,0 +1,33 @@
+---
+layout: default
+active: "directory.html"
+base: ""
+head: |
+  <title>AI &amp; Digital Tools Directory | Core.Digital</title><meta name="description" content="Search and filter a curated directory of AI tools, website builders, SEO, marketing, design, automation and e-commerce software.">
+  <link rel="canonical" href="https://webworksa1.github.io/core-digital/directory.html"><meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Core.Digital"><meta property="og:title" content="AI &amp; Digital Tools Directory | Core.Digital">
+  <meta property="og:description" content="Search and filter a curated directory of AI tools, website builders, SEO, marketing, design, automation and e-commerce software."><meta property="og:url" content="https://webworksa1.github.io/core-digital/directory.html"><meta property="og:image" content="https://webworksa1.github.io/core-digital/assets/img/og.png">
+ld: |
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Core.Digital", "url": "https://webworksa1.github.io/core-digital/", "logo": "https://webworksa1.github.io/core-digital/assets/img/logo.svg"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "AI & Digital Tools Directory"}</script>
+js: "<script src=\"assets/js/tools-data.js\" defer></script><script src=\"assets/js/directory.js\" defer></script>"
+---
+
+
+<section class="hero" style="padding-bottom:24px"><div class="container">
+<div class="breadcrumbs"><a href="index.html">Home</a> / Directory</div>
+<span class="eyebrow">Tool directory</span><h1>AI &amp; digital tools directory</h1>
+<p class="lead">Curated software for writing, design, video, code, websites, SEO, marketing, automation and commerce. Filter by category and price, save your shortlist.</p></div></section>
+<div class="container"><div class="dir-layout">
+<aside class="filters" aria-label="Filters"><strong>Filters</strong> <button class="save-btn" id="f-reset" style="float:right">Reset</button>
+<h4>Price</h4><div id="f-price"><label><input type="checkbox" value="Free"> Free</label><label><input type="checkbox" value="Freemium"> Freemium</label><label><input type="checkbox" value="Paid"> Paid</label><label><input type="checkbox" value="Open source"> Open source</label></div>
+<h4>Your list</h4><label><input type="checkbox" id="f-saved"> Saved only ♥</label>
+<h4>Category</h4><div id="f-cats"></div>
+<div class="card featured" style="margin-top:18px;padding:16px"><strong>List your tool</strong><p style="font-size:.9rem;margin:6px 0 10px">Free, Fast-Track and Featured options.</p><a class="btn btn-sm btn-primary btn-block" href="submit.html">Submit</a></div>
+</aside>
+<div><div class="toolbar"><label class="sr-only" for="q">Search</label><input id="q" type="search" placeholder="Search by name, use case or tag…  (⌘K)">
+<label class="sr-only" for="sort">Sort</label><select id="sort" style="max-width:220px"><option value="rel">Sort: Recommended</option><option value="az">Name A–Z</option><option value="za">Name Z–A</option><option value="cat">Category</option><option value="free">Free first</option></select>
+<span class="result-count" id="dir-count"></span></div>
+<div class="grid g3" id="dir-grid"></div>
+<div class="ad-slot container" data-ad="inArticle" aria-label="Advertisement"></div>
+<div class="card" style="margin-top:8px"><h3>Can't decide? Let an expert choose — and implement.</h3><p>Describe your goal and we'll match you with a specialist who has shipped it before. Free for businesses.</p><p style="margin-top:12px"><a class="btn btn-primary" href="get-matched.html">Get matched free</a></p></div>
+</div></div></div>
