@@ -28,6 +28,6 @@ if not os.path.exists(os.path.join(ROOT, "ads.txt")):
 open(os.path.join(ROOT, "manifest.webmanifest"), "w").write(json.dumps({
     "name": "Core.Digital", "short_name": "Core.Digital", "start_url": "./index.html", "display": "standalone",
     "background_color": "#0a0e1a", "theme_color": "#0a0e1a",
-    "icons": [{"src": "assets/img/logo.png", "sizes": "512x512", "type": "image/png"}]}, indent=2))
+    "icons": [{"src": "assets/img/logo.svg", "sizes": "any", "type": "image/svg+xml"}]}, indent=2))
 open(os.path.join(ROOT, ".nojekyll"), "w").write("")
 print(f"Built {len(out)} pages")
